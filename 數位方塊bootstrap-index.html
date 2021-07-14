@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>數位方塊bootstrap-index</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .my-container {
+            width: 60%;
+            margin: auto;
+        }
+
+        nav #navbarSupportedContent .navbar-nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .block-1 .line {
+            width: 63px;
+            height: 4px;
+            border-radius: 4px;
+            background-color: rgb(47, 108, 194);
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        .block-4 .line {
+            width: 63px;
+            height: 4px;
+            border-radius: 4px;
+            background-color: rgb(47, 108, 194);
+            margin-top: 10px;
+        }
+
+        @media(max-width:768px) {
+            .block-5 .text {
+                text-align: center;
+            }
+
+            .block-5 .pic {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="my-container" style="padding: 12px;">
+            <nav style="padding: 0;" class="navbar navbar-expand-xl navbar-light">
+                <a style="padding: 0;margin-left: 25px;" class="navbar-brand" href="#">
+                    <img style="width: 100px;padding: 2.5px;" src="./img/logo.svg">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <button
+                                style="font-size: 14px; padding: 8px 16px;margin-left: 10px; border: unset;color: black;"
+                                type="button" class="btn btn-outline-secondary">Blog</button>
+                        </li>
+                        <li class="nav-item active">
+                            <button
+                                style="font-size: 14px; padding: 8px 16px;margin-left: 10px; border: unset;color: black;"
+                                type="button" class="btn btn-outline-secondary">Portfolio</button>
+                        </li>
+                        <li class="nav-item active">
+                            <button
+                                style="font-size: 14px; padding: 8px 16px;margin-left: 10px; border: unset;color: black;"
+                                type="button" class="btn btn-outline-secondary">About</button>
+                        </li>
+                        <li class="nav-item active">
+                            <button
+                                style="font-size: 14px; padding: 8px 16px;margin-left: 10px; border: unset;color: black;"
+                                type="button" class="btn btn-outline-secondary">Contact</button>
+                        </li>
+                        <li class="nav-item active d-flex ">
+                            <a class="nav-link" href="./數位方塊bootstrap-shopping cart-1.html">
+                                <i style="font-size: 25px; text-align: center; color: black;"
+                                    class="fas fa-shopping-cart"></i>
+                                <span class="sr-only">(current)</span></a>
+                            <div class="dropdown">
+                                <a style="padding: 8px 0 8px 15px; border: none;background-color: unset;"
+                                    class="btn btn-secondary dropdown-toggle" href="#" role="button"
+                                    id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <i style="font-size: 25px; text-align: center; color: black;"
+                                        class="fas fa-user-circle"></i>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="./數位方塊bootstrap-login.html">Login</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </nav>
+
+    <main>
+        <!-- 輪播 (Carousel) -->
+        <div class="container-fluid p-0">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img style="background-color: gray;height: calc(100vh - 80px);" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img style="background-color: rgb(90, 90, 90);height: calc(100vh - 80px);"
+                            class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img style="background-color: rgb(58, 58, 58);height: calc(100vh - 80px);"
+                            class="d-block w-100">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <!-- 輪播 (Carousel) -->
+
+        <!-- Raw Denim Heirloom Man Braid -->
+        <div class="block-1" style="padding: 80px 20px 100px 20px;">
+            <div class="container-fluid" style="width: 80%;">
+                <div class="row text-center">
+                    <div class="col">
+                        <div class="text d-flex flex-column">
+                            <span style="font-size: 28px; margin-bottom: 10px;">Raw Denim Heirloom Man Braid</span>
+                            <span style="font-size:16px; padding: 0 400px;">Blue bottle crucifix vinyl post-ironic four
+                                dollar toast vegan taxidermy. Gastropub
+                                indxgo
+                                juice poutine, ramps microdosing banh mi pug.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="row text-center" style="margin-top: 50px;">
+                    <div class="col-md p-0">
+                        <div class="card d-flex flex-column justify-content-center align-items-center"
+                            style="border: none;padding: 16px;">
+                            <div class="pic d-flex justify-content-center align-items-center"
+                                style="width: 70px;height: 70px;background-color: rgba(59, 130, 246, 0.3);border-radius: 50%;">
+                                <svg style="width: 35px; height:350px;color:rgba(14, 2, 180, 0.5);" fill="none"
+                                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+                                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                                </svg>
+                            </div>
+
+                            <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                                <span class="card-title">Shooting Stars</span>
+                                <span class="card-text">Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+                                    taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS
+                                    try-hard.</sapn>
+                            </div>
+                            <a style="padding: 0;margin: 0;" href="">Learn More<i style="margin-left: 5px;"
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md p-0">
+                        <div class="card d-flex flex-column justify-content-center align-items-center"
+                            style="border: none;padding: 16px;">
+                            <div class="pic d-flex justify-content-center align-items-center"
+                                style="width: 70px;height: 70px;background-color: rgba(59, 130, 246, 0.3);border-radius: 50%;">
+                                <svg style="width: 35px;height: 35px;color:rgba(14, 2, 180, 0.5);" fill="none"
+                                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+                                    <circle cx="6" cy="6" r="3"></circle>
+                                    <circle cx="6" cy="18" r="3"></circle>
+                                    <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+                                </svg>
+                            </div>
+
+                            <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                                <span class="card-title">Shooting Stars</span>
+                                <span class="card-text">Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+                                    taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS
+                                    try-hard.</sapn>
+                            </div>
+                            <a style="padding: 0;margin: 0;" href="">Learn More<i style="margin-left: 5px;"
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md p-0">
+                        <div class="card d-flex flex-column justify-content-center align-items-center"
+                            style="border: none;padding: 16px;">
+                            <div class="pic d-flex justify-content-center align-items-center"
+                                style="width: 70px;height: 70px;background-color: rgba(59, 130, 246, 0.3);border-radius: 50%;">
+                                <svg style="width: 35px;height: 35px;color:rgba(14, 2, 180, 0.5);" fill="none"
+                                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+                                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                            </div>
+
+                            <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                                <span class="card-title">Shooting Stars</span>
+                                <span class="card-text">Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+                                    taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS
+                                    try-hard.</sapn>
+                            </div>
+                            <a style="padding: 0;margin: 0;" href="">Learn More<i style="margin-left: 5px;"
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row text-center" style="margin-top: 25px;">
+                    <div class="col-md">
+                        <button style="padding: 8px 32px;" type="button" class="btn btn-primary">Button</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Raw Denim Heirloom Man Braid -->
+
+        <!-- Master Cleanse Reliac Heirloom -->
+        <div class="block-2">
+            <div class="container-fluid" style="width: 70%;">
+                <div class="row mb-5">
+                    <div class="col-md-5">
+                        <h3>Master Cleanse Reliac Heirloom</h3>
+                    </div>
+                    <div class="col-md-7">
+                        <p>Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke
+                            farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies
+                            heirloom.</p>
+                    </div>
+                </div>
+
+
+                <div class="row mb-5">
+                    <div class="col-6 p-1">
+                        <div class="left-top d-flex mb-2">
+                            <img src="https://dummyimage.com/500x300" class="img-fluid" style="padding-right: 5px; width: 50%;">
+                            <img src="https://dummyimage.com/501x301" class="img-fluid" style="padding-left: 5px; width: 50%;">
+                        </div>
+                        <div class="left-bot">
+                            <img src="https://dummyimage.com/600x360" class="img-fluid" style="width: 100%;">
+                        </div>
+                    </div>
+                    <div class="col-6 p-1">
+                        <div class="left-top">
+                            <img src="https://dummyimage.com/601x361" class="img-fluid" style="width: 100%;">
+                        </div>
+                        <div class="left-bot d-flex mt-2">
+                            <img src="https://dummyimage.com/502x302" class="img-fluid" style="padding-right: 5px; width: 50%;">
+                            <img src="https://dummyimage.com/503x303" class="img-fluid" style="padding-left: 5px; width: 50%;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pricing -->
+        <div class="block-3" style="margin: 150px 0;">
+            <div class="container-fluid" style="width: 80%;">
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col" style="margin-bottom: 100px;">
+                            <h2>Pricing</h2>
+                            <p>Banh mi cornhole echo park skateboard authentic crucifix neutra tilde lyft biodiesel
+                                artisan
+                                direct trade mumblecore 3 wolf moon twee</p>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row" style="background-color: rgba(17,24,39,0.1)">
+                            <div class="col">
+                                <p style="margin:5px 0; padding: 5px 0;">Plan</p>
+                            </div>
+                            <div class="col">
+                                <p style="margin:5px 0; padding: 5px 0;">Speed</p>
+                            </div>
+                            <div class="col">
+                                <p style="margin:5px 0; padding: 5px 0;">Storage</p>
+                            </div>
+                            <div class="col">
+                                <p style="margin:5px 0; padding: 5px 0;">Price</p>
+                            </div>
+                        </div>
+
+                        <div class="row" style="border-bottom:1px rgba(17,24,39,0.1) solid;">
+                            <div class="col">
+                                <p style="margin:5px 0; padding: 5px 0;">Start</p>
+                            </div>
+                            <div class="col">
+                                <p style="margin:5px 0; padding: 5px 0;">5 Mb/s</p>
+                            </div>
+                            <div class="col">
+                                <p style="margin:5px 0; padding: 5px 0;">15 GB</p>
+                            </div>
+                            <div class="col  d-flex justify-content-md-between">
+                                <p style="margin:5px 0; padding: 5px 0;">Free</p>
+                                <p style="margin:5px 0; padding: 5px 0;"><input name="radio-btn" type="radio"></p>
+                            </div>
+                        </div>
+
+                        <div class="row" style="border-bottom:1px rgba(17,24,39,0.1) solid;">
+                            <div class="col">
+                                <p style="margin:5px 0; padding: 5px 0;">Pro</p>
+                            </div>
+                            <div class="col">
+                                <p style="margin:5px 0; padding: 5px 0;">25 Mb/s</p>
+                            </div>
+                            <div class="col">
+                                <p style="margin:5px 0; padding: 5px 0;">25 GB</p>
+                            </div>
+                            <div class="col  d-flex justify-content-md-between">
+                                <p style="margin:5px 0; padding: 5px 0;">$24</p>
+                                <p style="margin:5px 0; padding: 5px 0;"><input name="radio-btn" type="radio"></p>
+                            </div>
+                        </div>
+
+                        <div class="row" style="border-bottom:1px rgba(17,24,39,0.1) solid;">
+                            <div class="col">
+                                <p style="margin:5px 0; padding: 5px 0;">Business</p>
+                            </div>
+                            <div class="col">
+                                <p style="margin:5px 0; padding: 5px 0;">36 Mb/s</p>
+                            </div>
+                            <div class="col">
+                                <p style="margin:5px 0; padding: 5px 0;">40 GB</p>
+                            </div>
+                            <div class="col  d-flex justify-content-md-between">
+                                <p style="margin:5px 0; padding: 5px 0;">$50</p>
+                                <p style="margin:5px 0; padding: 5px 0;"><input name="radio-btn" type="radio"></p>
+                            </div>
+                        </div>
+
+                        <div class="row" style="border-bottom:1px rgba(17,24,39,0.1) solid;">
+                            <div class="col">
+                                <p style="margin:5px 0; padding: 5px 0;">Exclusive</p>
+                            </div>
+                            <div class="col">
+                                <p style="margin:5px 0; padding: 5px 0;">48 Mb/s</p>
+                            </div>
+                            <div class="col">
+                                <p style="margin:5px 0; padding: 5px 0;">120 GB</p>
+                            </div>
+                            <div class="col  d-flex justify-content-md-between">
+                                <p style="margin:5px 0; padding: 5px 0;">$72</p>
+                                <p style="margin:5px 0; padding: 5px 0;"><input name="radio-btn" type="radio"></p>
+                            </div>
+                        </div>
+
+                        <div class="row text-center mt-3 mb-5">
+                            <div class="col text-left"><a href="">Learn More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="col text-right">
+                                <button type="button" class="btn btn-primary">Button</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Pitchfork Kickstarter Taxidermy -->
+        <div class="block-4">
+            <div class="container-fluid" style="width: 75%;">
+
+                <div class="row mb-5">
+                    <div class="col">
+                        <h3>Pitchfork Kickstarter Taxidermy</h3>
+                        <div class="line"></div>
+                    </div>
+                    <div class="col">
+                        <p>
+                            Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke
+                            farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies
+                            heirloom prism food truck ugh squid celiac humblebrag.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md">
+                        <div class="card" style="background-color:rgba(243,244,246,var(--tw-bg-opacity));">
+                            <img src="https://dummyimage.com/720x400" class="img-fluid p-3" alt="Responsive image">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <p style="font-size: 12px;color: blue;">SUBTITLE</p>Chichen Itza
+                                </h5>
+                                <p class="card-text">Fingerstache flexitarian street art 8-bit waistcoat. Distillery
+                                    hexagon disrupt edison bulbche.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card" style="background-color:rgba(243,244,246,var(--tw-bg-opacity));">
+                            <img src="https://dummyimage.com/721x401" class="img-fluid p-3" alt="Responsive image">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <p style="font-size: 12px;color: blue;">SUBTITLE</p>Colosseum Roma
+                                </h5>
+                                <p class="card-text">Fingerstache flexitarian street art 8-bit waistcoat. Distillery
+                                    hexagon disrupt edison bulbche.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card" style="background-color:rgba(243,244,246,var(--tw-bg-opacity));">
+                            <img src="https://dummyimage.com/722x402" class="img-fluid p-3" alt="Responsive image">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <p style="font-size: 12px;color: blue;">SUBTITLE</p>Great Pyramid of Giza
+                                </h5>
+                                <p class="card-text">Fingerstache flexitarian street art 8-bit waistcoat. Distillery
+                                    hexagon disrupt edison bulbche.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card" style="background-color:rgba(243,244,246,var(--tw-bg-opacity));">
+                            <img src="https://dummyimage.com/723x403" class="img-fluid p-3" alt="Responsive image">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <p style="font-size: 12px;color: blue;">SUBTITLE</p>San Francisco
+                                </h5>
+                                <p class="card-text">Fingerstache flexitarian street art 8-bit waistcoat. Distillery
+                                    hexagon disrupt edison bulbche.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Shooting Stars -->
+        <div class="block-5" style="margin: 150px 0;">
+            <div class="container-fluid" style="width: 50%;">
+                <div class="mt-5 mb-5 row justify-content-center align-items-center">
+                    <div class="col-md-2 d-flex">
+                        <svg style="margin:auto;padding: 25px; width: 80px; height: 80px;background-color:rgba(59, 130, 246, 0.5);border-radius: 50%; color: rgba(14, 2, 180, 0.5); "
+                            fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                        </svg>
+                    </div>
+                    <div class="col-md-10">
+                        <h3>Shooting Stars</h3>
+                        <p>Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub
+                            indxgo juice poutine.</p>
+                        <p style="color: blue;">Learn More <i class="fas fa-arrow-right"></i></p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="mt-5 mb-5 row flex-md-row-reverse justify-content-center align-items-center">
+                    <div class="col-md-2 d-flex">
+                        <svg style="margin:auto;padding: 25px; width: 80px; height: 80px;background-color:rgba(59, 130, 246, 0.5);border-radius: 50%; color: rgba(14, 2, 180, 0.5); "
+                            fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                        </svg>
+                    </div>
+                    <div class="col-md-10">
+                        <h3>The Catalyzer</h3>
+                        <p>Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub
+                            indxgo juice poutine.</p>
+                        <p style="color: blue;">Learn More <i class="fas fa-arrow-right"></i></p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="mt-5 mb-5 row justify-content-center align-items-center">
+                    <div class="col-md-2 d-flex">
+                        <svg style="margin:auto;padding: 25px; width: 80px; height: 80px;background-color:rgba(59, 130, 246, 0.5);border-radius: 50%; color: rgba(14, 2, 180, 0.5); "
+                            fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                        </svg>
+                    </div>
+                    <div class="col-md-10">
+                        <h3>The 400 Blows</h3>
+                        <p>Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub
+                            indxgo juice poutine.</p>
+                        <p style="color: blue;">Learn More <i class="fas fa-arrow-right"></i></p>
+                    </div>
+                </div>
+
+                <div class="row mb-5">
+                    <div class="col d-flex align-content-center justify-content-center">
+                        <button type="button" class="btn btn-primary">Button</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- The Catcher in the Rye -->
+        <div class="block-6" style="margin-bottom:100px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md">
+                        <img src="https://dummyimage.com/400x400" class="img-fluid" alt="Responsive image" style="width: 100%;">
+                    </div>
+                    <div class="col-md">
+                        <p style="color: gray;">BRAND NAME</p>
+                        <p style="font-size: 24px;">The Catcher in the Rye</p>
+                        <div class="text">
+                            <span style="color: blue;">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                            <span style="border-right-style: solid;border-color: gray; padding: 0 10px;">4
+                                Reviews</span>
+                            <span style="color: gray; padding: 0 10px;">
+                                <i class="fab fa-facebook-f"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fas fa-comment"></i>
+                            </span>
+                        </div>
+                        <p style="margin: 20px 0;">Fam locavore kickstarter distillery. Mixtape chillwave tumeric
+                            sriracha taximy chia
+                            microdosing tilde DIY. XOXO fam indxgo juiceramps cornhole raw denim forage brooklyn.
+                            Everyday carry +1 seitan poutine tumeric. Gastropub blue bottle austin listicle pour-over,
+                            neutra jean shorts keytar banjo tattooed umami cardigan.
+                        </p>
+                        <div class="chose">
+                            <span>Color</span>
+                            <input style="width: 20px;height: 20px; cursor: pointer;" name="choose-color" type="radio">
+                            <input style="width: 20px;height: 20px; cursor: pointer;" name="choose-color" type="radio">
+                            <input style="width: 20px;height: 20px; cursor: pointer;" name="choose-color" type="radio">
+
+                            <span style="margin: 0 10px;">Size</span>
+
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Size
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">S</a>
+                                <a class="dropdown-item" href="#">M</a>
+                                <a class="dropdown-item" href="#">L</a>
+                                <a class="dropdown-item" href="#">XL</a>
+                            </div>
+
+                            <hr>
+
+                            <div class="Checkout d-flex align-content-center">
+                                <span style="font-size: 30px;">$58.00</span>
+                                <button type="button" class="btn btn-primary ml-auto"
+                                    style="padding: 0 20px; margin-right: 10px;">Button</button>
+                                <i style="color: gray; font-size: 30px;margin: auto 0;" class="fas fa-heart"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- picture-group -->
+        <div class="block-7" style="margin: 200px 0;">
+            <div class="container-fluid" style="width: 70%;">
+                <div class="row">
+                    <div class="col-md">
+                        <img src="https://dummyimage.com/420x260" class="img-fluid">
+                        <div class="text">
+                            <span style="color: gray;">CATEGORY</span>
+                            <p style="margin: 0;">The Catalyzer</p>
+                            <span style="color: gray;">$16.00</span>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <img src="https://dummyimage.com/421x261" class="img-fluid">
+                        <span style="color: gray;">CATEGORY</span>
+                        <p style="margin: 0;">Shooting Stars</p>
+                        <span style="color: gray;">$21.15</span>
+                    </div>
+                    <div class="col-md">
+                        <img src="https://dummyimage.com/422x262" class="img-fluid">
+                        <span style="color: gray;">CATEGORY</span>
+                        <p style="margin: 0;">Neptune</p>
+                        <span style="color: gray;">$12.00</span>
+                    </div>
+                    <div class="col-md">
+                        <img src="https://dummyimage.com/423x263" class="img-fluid">
+                        <span style="color: gray;">CATEGORY</span>
+                        <p style="margin: 0;">The 400 Blows</p>
+                        <span style="color: gray;">$18.40</span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md">
+                        <img src="https://dummyimage.com/424x264" class="img-fluid">
+                        <span style="color: gray;">CATEGORY</span>
+                        <p style="margin: 0;">The Catalyzer</p>
+                        <span style="color: gray;">$16.00</span>
+                    </div>
+                    <div class="col-md">
+                        <img src="https://dummyimage.com/425x265" class="img-fluid">
+                        <span style="color: gray;">CATEGORY</span>
+                        <p style="margin: 0;">Shooting Stars</p>
+                        <span style="color: gray;">$21.15</span>
+                    </div>
+                    <div class="col-md">
+                        <img src="https://dummyimage.com/427x267" class="img-fluid">
+                        <span style="color: gray;">CATEGORY</span>
+                        <p style="margin: 0;">Neptune</p>
+                        <span style="color: gray;">$12.00</span>
+                    </div>
+                    <div class="col-md">
+                        <img src="https://dummyimage.com/428x268" class="img-fluid">
+                        <span style="color: gray;">CATEGORY</span>
+                        <p style="margin: 0;">The 400 Blows</p>
+                        <span style="color: gray;">$18.40</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- google map -->
+        <div class="block-8" style="margin-top: 100px;">
+            <div class="container-fluid" style="position: relative;">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8166.336085186901!2d120.72344519326603!3d24.252646840711336!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34691a0f5d0f58d1%3A0x984554213f4033f4!2z6LGQ5Y6f5buf5p2x5aSc5biC!5e0!3m2!1szh-TW!2stw!4v1619168071472!5m2!1szh-TW!2stw"
+                    width="100%" height="800px" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+
+                <div class="feedback"
+                    style="width: 30%; background-color:white; padding: 30px;border-radius: 20px;position: absolute;top: 50px; right: 50px;">
+                    <form>
+                        <div class="form-group">
+                            <label style="font-size: 24px;" for="exampleInputEmail1">Feedback</label>
+                            <br>
+                            <label for="exampleInputEmail1">Post-ironic portland shabby chic echo park, banjo fashion
+                                axe</label>
+                            <br>
+                            <span>Email</span>
+                            <input type="email" class="form-control" id="exampleInputEmail1">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Message</label>
+                            <textarea style="height: 200px;" class="form-control" id="exampleInputPassword1"></textarea>
+                        </div>
+                        <button style="width: 100%;" type="submit" class="btn btn-primary">Button</button>
+                        <label for="exampleInputPassword1">Chicharrones blog helvetica normcore iceland tousled brook
+                            viral artisan.</label>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-top" style="padding: 150px 0;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md">
+                        <div class="footer-logo-top d-flex">
+                            <div class="footer-logo" style="width: 40px;height: 40px;border-radius: 50%;">
+                                <svg class="w-10 h-10 text-white" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 40 40">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                fill: #162446;
+                                            }
+
+                                            .cls-2 {
+                                                fill: #fff;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <title>資產 2</title>
+                                    <g id="圖層_2" data-name="圖層 2">
+                                        <g id="圖層_1-2" data-name="圖層 1">
+                                            <circle class="cls-1" cx="20" cy="20" r="20"></circle>
+                                            <path class="cls-2"
+                                                d="M20,7l7.13,4.11a7.91,7.91,0,0,1,3.95,6.84v6.8l-8.61-5V18.32l7.37,4.26V18.63a7.89,7.89,0,0,0-3.95-6.85L21.28,9.1V33.25L9,26.14V13.35l5.89,3.4a7.91,7.91,0,0,1,3.95,6.85v4.76l-1.23-.71V24.31a7.92,7.92,0,0,0-4-6.85l-3.42-2v9.94L20,31.11Z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <p style="font-size: 26px; margin-left:5px;">數位方塊</p>
+                        </div>
+                        <div class="footer-logo-bot">
+                            <span style="color:rgba(75,85,99)">Air plant banjo lyft occupy retro adaptogen indego</span>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="text">
+                            <span style="font-size: 18px;">CATEGORIES</span>
+                            <ul style="margin-top: 10px; list-style-type: none; padding: 0; color:rgba(75,85,99);">
+                                <li>First Link</li>
+                                <li>Second Link</li>
+                                <li>Third Link</li>
+                                <li>Fourth Link</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="text">
+                            <span style="font-size: 18px;">CATEGORIES</span>
+                            <ul style="margin-top: 10px; list-style-type: none; padding: 0; color:rgba(75,85,99);">
+                                <li>First Link</li>
+                                <li>Second Link</li>
+                                <li>Third Link</li>
+                                <li>Fourth Link</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="text">
+                            <span style="font-size: 18px;">CATEGORIES</span>
+                            <ul style="margin-top: 10px; list-style-type: none; padding: 0; color:rgba(75,85,99);">
+                                <li>First Link</li>
+                                <li>Second Link</li>
+                                <li>Third Link</li>
+                                <li>Fourth Link</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="text">
+                            <span style="font-size: 18px;">CATEGORIES</span>
+                            <ul style="margin-top: 10px; list-style-type: none; padding: 0; color:rgba(75,85,99);">
+                                <li>First Link</li>
+                                <li>Second Link</li>
+                                <li>Third Link</li>
+                                <li>Fourth Link</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bot" style="background-color: rgba(243,244,246)">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md d-flex justify-content-between" style="margin: 20px 0;">
+                        <div class="footer-text" style="color: gray;">
+                            <p style="margin: 0;">© 2020 Tailblocks — @knyttneve</p>
+                        </div>
+                        <div class="icon-group" style="color: gray;">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
